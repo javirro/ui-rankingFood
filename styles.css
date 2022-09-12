@@ -9,7 +9,7 @@ td {
 }
 
 @media (max-width: 350px) {
-    .table,
+    table,
     th,
     th,
     td {
