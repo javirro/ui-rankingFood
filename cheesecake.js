@@ -7,6 +7,7 @@ const headers = {
     Accept: "application/json",
     "Content-Type": "application/json",
 };
+const API_URL = 'https://ranking-git-master-javirro.vercel.app'
 
 const showData = (data) => {
     const number = data.length;
@@ -41,7 +42,7 @@ const showData = (data) => {
 
 const searchCheesecakes = async() => {
     currentRankingDiv.innerHTML = "";
-    const response = await fetch("/cheesecake");
+    const response = await fetch(`${API_URL}/cheesecake`);
     const ckPromise = response.json();
     ckPromise.then((data) => showData(data));
 };
@@ -49,7 +50,7 @@ const searchCheesecakes = async() => {
 searchCheesecakes();
 
 btAdd.addEventListener("click", async() => {
-    const numberRes = await fetch("/burger/number");
+    const numberRes = await fetch(`${API_URL}/cheesecake/number`);
     const number = await numberRes.json();
     const where = document.getElementById("ck-where").value;
     const position = document.getElementById("ck-position").value;
@@ -60,7 +61,7 @@ btAdd.addEventListener("click", async() => {
             where: where,
             position: position,
         });
-        const response = await fetch("/cheesecake", {
+        const response = await fetch(`${API_URL}/cheesecake`, {
             method: "POST",
             headers: headers,
             body: bodyData,
