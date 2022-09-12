@@ -8,10 +8,12 @@ td {
     padding: 3px;
 }
 
-@media (max-width: 640px) {
-    .landing-images {
-        width: 250px;
-        height: 90px;
+@media (max-width: 350px) {
+    .table,
+    th,
+    th,
+    td {
+        width: 220px;
     }
 }
 
