@@ -1,18 +1,20 @@
-table,
-th,
-tr,
-td {
+.myTable {
     border-collapse: collapse;
     border: solid 1px;
     width: 450px;
     padding: 3px;
 }
 
+th,
+tr,
+td {
+    border-collapse: collapse;
+    border: solid 1px;
+    padding: 3px;
+}
+
 @media (max-width: 350px) {
-    table,
-    th,
-    th,
-    td {
+    .myTable {
         width: 220px;
     }
 }
