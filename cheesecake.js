@@ -19,7 +19,7 @@ const showData = (data) => {
     const th1 = document.createElement("th");
     th1.setAttribute("colSpan", "2");
     th1.style.textAlign = "center";
-    trH.style.backgroundColor = "#12f037";
+    trH.style.backgroundColor = "#ff25b0";
     trH.append(th1);
     th1.innerHTML = "CHEESECAKES RANKING";
     thead.appendChild(trH);
