@@ -54,7 +54,7 @@ btAdd.addEventListener("click", async() => {
     const number = await numberRes.json();
     const where = document.getElementById("ck-where").value;
     const position = document.getElementById("ck-position").value;
-    if (position > number + 1)
+    if (number !== 0 && (position > number + 1))
         alert(`You only have ${number} cheesecakes in the ranking.`);
     else {
         const bodyData = JSON.stringify({

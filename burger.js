@@ -52,7 +52,7 @@ btAdd.addEventListener("click", async() => {
     const number = await numberRes.json();
     const position = document.getElementById("bg-position").value;
     const where = document.getElementById("bg-where").value;
-    if (position > number + 1) alert(`You only have ${number} burgers in the ranking.`);
+    if (number !== 0 && (position > number + 1)) alert(`You only have ${number} burgers in the ranking.`);
     else {
         const bodyData = JSON.stringify({
             where: where,

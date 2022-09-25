@@ -19,51 +19,6 @@ td {
     }
 }
 
-#img-adec:hover {
-    border: solid 3px black;
-    border-radius: 8px;
-}
-
-#img-cdti:hover {
-    border: solid 3px black;
-    border-radius: 8px;
-}
-
-.btAbrirModal {
-    margin-top: 50px;
-    padding: 8px;
-    width: 400px;
-    border-radius: 8px;
-    font-weight: 700;
-    letter-spacing: 0.07em;
-    background-color: rgb(158, 173, 161);
-}
-
-@media (max-width: 600px) {
-    .btAbrirModal {
-        width: 250px;
-    }
-}
-
-.btAbrirModal:hover {
-    background-color: rgb(24, 214, 62);
-    transition: ease-in 0.3s;
-}
-
-.btCerrarModal {
-    border-radius: 6px;
-    font-weight: bold;
-    letter-spacing: 0.07em;
-    background-color: rgb(158, 173, 161);
-    margin-top: 10px;
-    padding: 6px;
-}
-
-.btCerrarModal:hover {
-    background-color: rgb(249, 96, 111);
-    transition: ease-in 0.3s;
-}
-
 h1 {
     letter-spacing: 0.1em;
     font-weight: bold;
@@ -117,7 +72,7 @@ h5 {
 }
 
 .white-letter:hover {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(202, 190, 201, 0.5);
 }
 
 .bt-registrar {
