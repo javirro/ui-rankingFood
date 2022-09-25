@@ -40,9 +40,10 @@ h2 {
 h3 {
     letter-spacing: 0.05em;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 15px;
-    color: black;
+    color: rgb(68, 2, 65);
+    text-shadow: darkorchid;
 }
 
 h4 {

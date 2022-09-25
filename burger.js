@@ -43,7 +43,10 @@ const showData = (data) => {
         tbody.append(tr);
     }
     table.append(thead, tbody);
-    resultDiv.append(table);
+    if (number !== 0) {
+        resultDiv.append(table);
+    }
+
 };
 
 const btAdd = document.getElementById("bg-bt-add");
@@ -63,5 +66,7 @@ btAdd.addEventListener("click", async() => {
             headers: headers,
             body: bodyData,
         });
+
+        searchBurgers()
     }
 });
