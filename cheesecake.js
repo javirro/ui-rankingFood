@@ -36,7 +36,10 @@ const showData = (data) => {
         tbody.append(tr);
     }
     table.append(thead, tbody);
-    currentRankingDiv.append(table);
+    if (number !== 0) {
+        currentRankingDiv.append(table);
+    }
+
 };
 
 
@@ -67,4 +70,5 @@ btAdd.addEventListener("click", async() => {
             body: bodyData,
         });
     }
+    searchCheesecakes()
 });
