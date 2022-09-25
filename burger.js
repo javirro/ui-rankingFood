@@ -49,8 +49,8 @@ const showData = (data) => {
 const btAdd = document.getElementById("bg-bt-add");
 btAdd.addEventListener("click", async() => {
     const numberRes = await fetch(`${API_URL}/burger/number`);
-    const number = await numberRes.json();
-    const position = document.getElementById("bg-position").value;
+    const number = arseInt(await numberRes.json())
+    const position = parseInt(document.getElementById("bg-position").value)
     const where = document.getElementById("bg-where").value;
     if (number !== 0 && (position > number + 1)) alert(`You only have ${number} burgers in the ranking.`);
     else {
